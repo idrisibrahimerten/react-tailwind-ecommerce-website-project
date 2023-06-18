@@ -1,5 +1,7 @@
 # React-Tailwind E-Commerce
 
+Try Project: https://idrisibrahimerten.github.io/react-tailwind-ecommerce-website-project
+
 This project is an e-commerce website developed using React and Tailwind CSS. It lists the products with the data received through the FakeStore API, filters by categories and provides the opportunity to view detailed product information.
 
 ## Features
