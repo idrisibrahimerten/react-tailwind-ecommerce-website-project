@@ -16,3 +16,19 @@ Bu proje, React ve Tailwind CSS kullanılarak geliştirilmiş bir e-ticaret web 
 
    ```bash
    git clone https://github.com/KullaniciAdiniz/React-Tailwind-ECommerce.git
+   
+2. Proje dizinine gidin:
+
+   ```bash
+   cd React-Tailwind-ECommerce
+   
+3. Bağımlılıkları yükleyin:
+
+   ```bash
+   npm install
+   
+4. Geliştirme sunucusunu başlatın:
+
+   ```bash
+   npm start
+   Uygulama http://localhost:3000 adresinde çalışacaktır.
