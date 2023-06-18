@@ -31,7 +31,7 @@ This project is an e-commerce website developed using React and Tailwind CSS. It
 
     ```bash
     npm start
-   #### The application will run at http://localhost:3000.
+  #### The application will run at http://localhost:3000.
 
 ## Contribute
 - Fork this project.
