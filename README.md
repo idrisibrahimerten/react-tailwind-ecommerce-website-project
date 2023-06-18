@@ -31,4 +31,4 @@ Bu proje, React ve Tailwind CSS kullanılarak geliştirilmiş bir e-ticaret web 
 
    ```bash
    npm start
-Uygulama http://localhost:3000 adresinde çalışacaktır.
+  Uygulama http://localhost:3000 adresinde çalışacaktır.
