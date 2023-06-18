@@ -14,22 +14,22 @@ This project is an e-commerce website developed using React and Tailwind CSS. It
 
 1. Clone the project to your computer:
 
-    ``bash
+    ```bash
     git clone https://github.com/YourUserName/React-Tailwind-ECommerce.git
    
 2. Go to the project directory:
 
-    ``bash
+    ```bash
     cd React-Tailwind-ECommerce
    
 3. Install dependencies:
 
-    ``bash
+    ```bash
     npm install
    
 4. Start the development server:
 
-    ``bash
+    ```bash
     npm start
    #### The application will run at http://localhost:3000.
 
