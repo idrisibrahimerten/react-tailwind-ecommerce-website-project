@@ -32,3 +32,16 @@ Bu proje, React ve Tailwind CSS kullanılarak geliştirilmiş bir e-ticaret web 
    ```bash
    npm start
   #### Uygulama http://localhost:3000 adresinde çalışacaktır.
+
+## Katkıda Bulunma
+- Bu projeyi fork edin.
+- Yeni bir branch oluşturun: git checkout -b feature/your-feature
+- Değişikliklerinizi commit edin: git commit -m 'Add some feature'
+- Branch'inizi push edin: git push origin feature/your-feature
+- Bir Pull Request (PR) açın.
+
+Projenin canlı demo versiyonunu buradan görebilirsiniz: Demo Linki
+
+Herhangi bir sorunuz veya geri bildiriminiz varsa, lütfen iletişime geçmekten çekinmeyin. E-posta: example@example.com
+
+Teşekkürler ve keyifli kullanımlar!
