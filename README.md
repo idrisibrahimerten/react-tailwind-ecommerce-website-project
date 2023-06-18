@@ -40,7 +40,7 @@ This project is an e-commerce website developed using React and Tailwind CSS. It
 - Push your branch: git push origin feature/your-feature
 - Open a Pull Request (PR).
 
-You can see the live demo version of the project here: Demo Link
+You can see the live demo version of the project here: https://idrisibrahimerten.github.io/react-tailwind-ecommerce-website-project/
 
 If you have any questions or feedback, please feel free to contact. Email: idrisibrahimerten@gmail.com
 
@@ -90,7 +90,7 @@ Bu proje, React ve Tailwind CSS kullanılarak geliştirilmiş bir e-ticaret web 
 - Branch'inizi push edin: git push origin feature/your-feature
 - Bir Pull Request (PR) açın.
 
-Projenin canlı demo versiyonunu buradan görebilirsiniz: Demo Linki
+Projenin canlı demo versiyonunu buradan görebilirsiniz: (https://idrisibrahimerten.github.io/react-tailwind-ecommerce-website-project/)
 
 Herhangi bir sorunuz veya geri bildiriminiz varsa, lütfen iletişime geçmekten çekinmeyin. E-posta: idrisibrahimerten@gmail.com
 
