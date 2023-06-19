@@ -14,10 +14,10 @@ const Home = () => {
 
   const fetchCategories = async () => {
     try {
-      const response = await fetch('https://fakestoreapi.com/products/');
+      const response = await fetch('https://api.escuelajs.co/api/v1/products');
       const data = await response.json();
-      const uniqueCategories = [...new Set(data.map(item => item.category))];
-      setCategories(['All', ...uniqueCategories]);
+      const uniqueCategories = [...new Set(data.map(item => item.category.name))];
+      setCategories(['', ...uniqueCategories]);
     } catch (error) {
       console.error('Kategori bilgileri alınamadı:', error);
     }
@@ -28,10 +28,10 @@ const Home = () => {
   };
 
   const filteredProducts = products.filter(item => {
-    if (selectedCategory === '' || 'all') {
+    if (selectedCategory === 'All') {
       return true; // Tüm ürünleri göster
     }
-    return item.category === selectedCategory;
+    return item.category.name === selectedCategory;
   });
 
   return (

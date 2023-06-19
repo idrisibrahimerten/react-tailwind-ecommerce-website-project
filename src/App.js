@@ -17,7 +17,7 @@ const App = () => {
     <Router>
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/react-tailwind-ecommerce-website-project' element={<Home />} />
         <Route path='/product/:id' element={<ProductDetails />} />
         <Route path='/checkout' element={<CheckoutScreen />} />
         <Route path='/payment' element={<PaymentScreen />} />

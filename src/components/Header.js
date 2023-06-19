@@ -10,7 +10,7 @@ const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const { isOpen, setIsOpen } = useContext(SidebarContext);
   const { itemAmount } = useContext(CartContext);
-  const { setSelectedCategory, setProducts } = useContext(ProductContext); // Add setProducts function
+  const { setSelectedCategory, setProducts } = useContext(ProductContext);
   const [categories, setCategories] = useState([]);
 
   // Event listener
@@ -21,31 +21,35 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    fetchCategories(); // Fetch categories on component mount
+    fetchCategories();
   }, []);
 
   const fetchCategories = async () => {
     try {
-      const response = await fetch('https://fakestoreapi.com/products');
+      const response = await fetch('https://api.escuelajs.co/api/v1/products');
       const data = await response.json();
-      const uniqueCategories = [...new Set(data.map(item => item.category))];
+      const uniqueCategories = [...new Set(data.map(item => item.category.name))];
       setCategories(['All', ...uniqueCategories]);
     } catch (error) {
-      console.error('Kategori bilgileri alınamadı:', error);
+      console.error('Failed to fetch categories:', error);
     }
   };
 
   const handleCategoryChange = async (event) => {
     const selectedCategory = event.target.value;
-    setSelectedCategory(selectedCategory); // Update selected category
+    setSelectedCategory(selectedCategory);
 
     // Fetch products based on selected category
     try {
-      const response = await fetch(`https://fakestoreapi.com/products/category/${selectedCategory}`);
+      let apiUrl = 'https://api.escuelajs.co/api/v1/products';
+      if (selectedCategory !== 'All') {
+        apiUrl += `?category=${selectedCategory}`;
+      }
+      const response = await fetch(apiUrl);
       const data = await response.json();
-      setProducts(data); // Update product list
+      setProducts(data);
     } catch (error) {
-      console.error('Ürünler alınamadı:', error);
+      console.error('Failed to fetch products:', error);
     }
   };
 

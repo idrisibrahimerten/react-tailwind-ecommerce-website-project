@@ -15,7 +15,7 @@ const ProductDetail = () => {
 
   const fetchProductDetails = async () => {
     try {
-      const response = await fetch(`https://fakestoreapi.com/products/${id}`);
+      const response = await fetch(`https://api.escuelajs.co/api/v1/products/${id}`);
       const data = await response.json();
       setProduct(data);
     } catch (error) {
@@ -27,14 +27,15 @@ const ProductDetail = () => {
     return <div>Loading...</div>;
   }
 
-  const { image, title, category, price, description } = product;
+  const { images, title, category, price, description } = product;
+  const imageUrl = images && images.length > 0 ? images[0] : '';
 
   return (
     <section className="pt-32 pb-12 lg:py-32 h-screen flex items-center">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center">
           <div className='flex flex-1 justify-center items-center mb-8 lg:mb-0'>
-            <img src={image} alt='' className="max-w-[200px] lg:max-w-sm" />
+            <img src={imageUrl} alt='' className="max-w-[200px] lg:max-w-sm" />
           </div>
           {/* text */}
           <div className='flex-1 text-center lg:text-left'>
